@@ -1,9 +1,9 @@
-provider "azure" {
+provider "aws" {
   profile 	= "default"
-  region 	= "us-east"
+  region 	= "us-east-2"
 }
 
-resource "azure_bucket" "tf_firstcourse" {
-  bucket 	= "Azure-terraform-2022-03-24"
+resource "aws_s3_bucket" "tf_firstcourse" {
+  bucket 	= "aws-tf-2022-04-10"
   acl	 	= "private"
 }
