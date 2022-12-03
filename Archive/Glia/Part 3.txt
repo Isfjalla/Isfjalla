@@ -1,0 +1,10 @@
+To deploy:
+
+Start Minikube
+
+helm install glia-chart glia-chart
+
+& minikube -p minikube docker-env --shell powershell | Invoke-Expression
+
+Deploy via run commands in README.txt
+
